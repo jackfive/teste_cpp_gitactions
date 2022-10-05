@@ -1,7 +1,5 @@
 #include <iostream>
 
-int main(int argc, char const *argv[])
-{
-    std::cout << "Hello World" << std::endl;
-    return 0;
+int main() {
+    std::cout << "Hello C++ project!" << std::endl;
 }
