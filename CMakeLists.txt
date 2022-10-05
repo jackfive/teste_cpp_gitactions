@@ -6,8 +6,9 @@ enable_testing()
 
 file(GLOB TARGET_SRC "./src/*.cpp" )
 
-add_executable(main ${TARGET_SRC})
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
+add_executable(main ${TARGET_SRC})
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
